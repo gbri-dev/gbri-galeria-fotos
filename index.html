@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de fotos</title>
+  <!--Font Roboto-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Galeria de fotos</h1>
+    <button type="submit">Nova imagem +</button>
+  </header>
+
+  <form>
+    <h2>Inserir nova imagem</h2>
+    <input type="url" id="urlImg" placeholder="Link da imagem" required>
+    <button type="submit">adicionar</button>
+    <button type="reset" id="botao-cancelar">cancelar</button>
+  </form>
+
+  <ul>
+    <li>
+      <img src="./images/cat.jpg" alt="pintura de um gato">
+      <div class="overlay-image-link">
+        <a href="./images/cat.jpg" title="ver uma em tamnho real" target="_blank">Veja imagem no tamanho real</a>
+      </div>
+    </li>
+    <li>
+      <img src="./images/foto2.jpg" alt="ave flamengo">
+      <div class="overlay-image-link">
+        <a href="./images/foto2.jpg" title="ver uma em tamnho real" target="_blank">Veja imagem no tamanho real</a>
+      </div>
+    </li>
+    <li>
+      <img src="./images/foto3.jpg" alt="cãos filhotes dentro do bornal">
+      <div class="overlay-image-link">
+        <a href="./images/foto3.jpg" title="ver uma em tamnho real" target="_blank">Veja imagem no tamanho real</a>
+      </div>
+    </li>
+    <li>
+      <img src="./images/foto4.jpg" alt="abelha voando sobre a flor">
+      <div class="overlay-image-link">
+        <a href="./images/foto4.jpg" title="ver uma em tamnho real" target="_blank">Veja imagem no tamanho real</a>
+      </div>
+    </li>
+  </ul>
+
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js" defer></script>
+</body>
+
+</html>
